@@ -1,6 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 EXTRA_ALSA ?= "empty"
 EXTRA_ALSA_vuduo4k = "vuplus"

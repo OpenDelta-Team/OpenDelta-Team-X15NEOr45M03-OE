@@ -1,5 +1,5 @@
 # package is machine specific
-PACKAGE_ARCH := "${MACHINE_ARCH}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 SRC_URI += " \
     file://chromium/0002-Replace-hbbtv-responses-with-application-xhtml-xml.patch;patchdir=src/3rdparty \
