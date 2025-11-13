@@ -11,8 +11,6 @@ inherit gitpkgv allarch gettext setuptools3-openplugins python3-compileall
 PV = "1.1+git"
 PKGV = "1.1+git${GITPKGV}"
 
-SRCREV = "${AUTOREV}"
-
 SRC_URI = "git://github.com/OpenViX/PlutoTV.git;protocol=https;branch=master"
 
 S = "${WORKDIR}/git"
