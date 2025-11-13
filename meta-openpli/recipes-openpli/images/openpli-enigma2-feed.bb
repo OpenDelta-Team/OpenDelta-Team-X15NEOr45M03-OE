@@ -20,7 +20,7 @@ OPTIONAL_BSP_ENIGMA2_PACKAGES ?= ""
 
 inherit linux-kernel-base
 KERNEL_VERSION = "${@get_kernelversion_headers('${STAGING_KERNEL_DIR}') or oe.utils.read_file('${STAGING_KERNEL_BUILDDIR}/kernel-abiversion') or oe.utils.read_file('${PKGDATA_DIR}/kernel-depmod/kernel-abiversion')}"
-
+[6~
 # Out-of-tree wifi drivers, build conditionally based on kernel version
 OPTIONAL_WIFI_PACKAGES = "\
 	${@ 'kernel-module-8812au'     if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.15') < 0) else '' } \
@@ -206,6 +206,7 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-modifyplifullhd \
 	enigma2-plugin-extensions-moviemanager \
 	enigma2-plugin-extensions-openmultiboot \
+	enigma2-plugin-extensions-pluto \
 	enigma2-plugin-extensions-refreshbouquet \
 	enigma2-plugin-extensions-sdgradio \
 	enigma2-plugin-extensions-serienrecorder \
