@@ -617,6 +617,7 @@ elif [ "$MACHINE" = "ustym4kpro" ]; then
 		updateinfo "displaymodel" "Ustym 4K Twin"
 		updateinfo "machinebuild" "ustym4ktwin"
 	fi
+fi
 
 # re-add the checksum
 MD5SUM=`md5sum $TMPFILE | cut -d ' ' -f 1`
