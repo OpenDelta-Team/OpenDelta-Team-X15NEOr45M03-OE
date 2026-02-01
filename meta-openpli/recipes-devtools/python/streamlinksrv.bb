@@ -1,7 +1,6 @@
 DESCRIPTION = "streamlinksrv is a helper deamon for streamlink"
 SECTION = "devel/python"
-MAINTAINER = "SatDreamGR Billy2011"
-HOMEPAGE = "www.satdreamgr.com"
+MAINTAINER = "PliTeam PepSik SatDreamGR Billy2011"
 LICENSE = "GPL-2.0-or-later"
 require conf/license/license-gplv2.inc
 
@@ -9,14 +8,13 @@ inherit allarch gittag
 
 RDEPENDS:${PN} = "python3-core streamlink"
 
-SRC_URI = "git://github.com/oe-mirrors/livestreamersrv;protocol=https;branch=streamlinksrv \
-           file://set-interpreter-to-python3.patch \
+SRC_URI = "git://github.com/openpli/livestreamersrv;protocol=https;branch=master \
 "
 
 S = "${WORKDIR}/git"
 
-PV = "1.8.4+git"
-PKGV = "1.8.4+${GITPKGVTAG}"
+PV = "1.8.5+git"
+PKGV = "1.8.5+${GITPKGVTAG}"
 
 do_install:append() {
     install -d ${D}${sbindir}
