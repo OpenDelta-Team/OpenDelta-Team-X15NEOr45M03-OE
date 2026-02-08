@@ -47,12 +47,12 @@ kernel_do_configure:prepend() {
 	install -m 0644 ${WORKDIR}/initramfs-subdirboot.cpio.gz ${B}/
 }
 
-kernel_do_install:append_h11() {
+kernel_do_install:append:h11() {
 	install -d ${D}/${KERNEL_IMAGEDEST}
 	install -m 0755 ${WORKDIR}/findkerneldevice.sh ${D}/${KERNEL_IMAGEDEST}
 }
 
-pkg_postinst:kernel-image_h8() {
+pkg_postinst:kernel-image:h8() {
 	if [ "x$D" == "x" ]; then
 		if [ -f /${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE} ] ; then
 			flash_eraseall /dev/${MTD_KERNEL}
