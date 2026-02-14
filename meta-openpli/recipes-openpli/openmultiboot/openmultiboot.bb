@@ -17,8 +17,6 @@ SRC_URI = "git://github.com/oe-alliance/openmultiboot.git;protocol=https;branch=
 
 inherit autotools-brokensep pkgconfig
 
-S = "${WORKDIR}/git"
-
 EXTRA_OEMAKE = " \
     'CFLAGS=${CFLAGS} \
     -I=${includedir}/freetype2 \

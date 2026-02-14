@@ -16,8 +16,6 @@ DEPENDS = "bitstream libev"
 SRC_ORIGIN ?= "git://github.com/videolan/dvblast.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
 
-S = "${WORKDIR}/git"
-
 inherit autotools-brokensep
 
 do_compile:prepend() {

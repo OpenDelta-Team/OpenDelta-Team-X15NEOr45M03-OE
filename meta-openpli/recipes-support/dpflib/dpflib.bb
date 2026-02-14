@@ -9,8 +9,6 @@ DEPENDS = "libusb-compat libusb1 python3"
 SRC_URI = "git://github.com/atvcaptain/dpf-ax.git;branch=dreamlayers;protocol=https \
         file://fix-build-with-python-3.10.patch"
 
-S = "${WORKDIR}/git"
-
 inherit pkgconfig gitpkgv autotools-brokensep python3native python3targetconfig
 
 SRCREV = "${AUTOREV}"

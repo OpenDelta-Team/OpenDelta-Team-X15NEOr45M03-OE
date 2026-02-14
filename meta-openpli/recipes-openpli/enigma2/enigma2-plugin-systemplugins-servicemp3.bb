@@ -88,8 +88,6 @@ RRECOMMENDS:${PN} = "\
 
 SRC_URI = "git://github.com/openpli/servicemp3.git;branch=python3;protocol=https file://remove-redundant-c17-check.patch"
 
-S = "${WORKDIR}/git"
-
 inherit autotools gitpkgv pkgconfig python3-compileall
 
 PV = "git"

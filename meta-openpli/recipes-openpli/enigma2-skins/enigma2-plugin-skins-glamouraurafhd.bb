@@ -12,8 +12,6 @@ SRC_URI = "git://github.com/MCelliotG/GlamourAuraFHD-skin.git;protocol=https;bra
 
 FILES:${PN} = "/usr"
 
-S = "${WORKDIR}/git"
-
 do_compile() {
 }
 

@@ -121,8 +121,6 @@ SRC_URI := " ${SRC_ORIGIN};branch=${ENIGMA2_BRANCH}"
 
 LDFLAGS:prepend = " -lxml2 "
 
-S = "${WORKDIR}/git"
-
 PACKAGES += "${PN}-meta ${PN}-build-dependencies enigma2-fonts"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"

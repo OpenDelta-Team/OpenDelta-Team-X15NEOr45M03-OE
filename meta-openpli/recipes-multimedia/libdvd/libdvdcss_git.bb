@@ -8,7 +8,7 @@ SRC_URI = "git://github.com/xbmc/libdvdcss.git;protocol=https;branch=nexus"
 inherit autotools
 
 SRCREV = "84a7ba82a31f4ac73d93de108ee8eaa2d250cf5e"
-S = "${WORKDIR}/git"
+
 PV = "1.4.3-Next-Nexus-Alpha2"
 
 EXTRA_OECONF = " --disable-doc "

@@ -27,8 +27,6 @@ CFLAGS:append = " -I${STAGING_INCDIR}/libxml2/ -I${STAGING_INCDIR}/${PYTHON_DIR}
 # prevent lots of QA warnings
 INSANE_SKIP:${PN} += "already-stripped"
 
-S = "${WORKDIR}/git"
-
 do_compile() {
     echo ${PV} > ${S}/VERSION
     oe_runmake SWIG="swig"

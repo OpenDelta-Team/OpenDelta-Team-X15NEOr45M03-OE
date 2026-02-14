@@ -17,8 +17,6 @@ SRC_URI = "git://github.com/OpenPLi/kodiext.git;protocol=https;branch=main \
 	file://advancedsettings-empty.xml \
 "
 
-S = "${WORKDIR}/git"
-
 PV = "20+git"
 PKGV = "20+git${GITPKGV}"
 

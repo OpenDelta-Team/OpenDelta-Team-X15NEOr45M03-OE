@@ -17,8 +17,6 @@ SRC_URI = "git://github.com/OpenPLi/servicehisilicon.git;branch=${SERVICEHISILIC
            file://remove-redundant-c17-check.patch \
 "
 
-S = "${WORKDIR}/git"
-
 inherit autotools gitpkgv python3-compileall pkgconfig
 
 PV = "git"

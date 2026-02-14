@@ -15,7 +15,6 @@ DEPENDS = "libexif libav libjpeg-turbo libvorbis flac libid3tag sqlite3"
 SRC_URI = "git://git.code.sf.net/p/minidlna/git;branch=master;module=git \
            file://0001-add-skript-hu.po-adapt-configure.patch \
            "
-S = "${WORKDIR}/git"
 
 do_configure:prepend() {
 		sed -i 's/AM_INIT_AUTOMAKE.*$/AM_INIT_AUTOMAKE([foreign subdir-objects])/' ${S}/configure.ac

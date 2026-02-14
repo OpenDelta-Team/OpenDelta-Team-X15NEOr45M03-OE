@@ -17,8 +17,6 @@ RDEPENDS:${PN} = " \
 	${@bb.utils.contains("MACHINE", "dm8000", "dreambox-buildimage mtd-utils-jffs2" , "ofgwrite", d)} \
 	"
 
-S = "${WORKDIR}/git"
-
 PV = "git"
 PKGV = "git${GITPKGV}"
 

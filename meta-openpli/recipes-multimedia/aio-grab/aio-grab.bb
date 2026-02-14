@@ -14,8 +14,6 @@ PKGV = "1.0+git${GITPKGV}"
 SRC_ORIGIN ?= "git://github.com/OpenPLi/${BPN}.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
 
-S = "${WORKDIR}/git"
-
 inherit autotools pkgconfig
 
 GLIBC_64BIT_TIME_FLAGS:mipsel = ""

@@ -15,7 +15,6 @@ EXTRA_OECONF = " \
 
 ALLOW_EMPTY:${PN} = "1"
 
-S = "${WORKDIR}/git"
 DEPLOY_DIR = "${TMPDIR}/deploy"
 
 ENIGMA2_PLUGIN_EXTENSIONS_HBBTV = " \

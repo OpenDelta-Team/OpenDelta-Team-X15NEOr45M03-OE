@@ -13,8 +13,6 @@ inherit gittag autotools gettext pkgconfig
 PV = "git"
 PKGV = "${GITPKGVTAG}"
 
-S = "${WORKDIR}/git"
-
 do_configure:prepend() {
 	mkdir -p ${S}/autotools
 	cp ${STAGING_DATADIR}/gettext/config.rpath ${S}/autotools/

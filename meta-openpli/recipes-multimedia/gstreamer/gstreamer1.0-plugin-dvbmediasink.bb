@@ -19,8 +19,6 @@ GSTVERSION = "1.0"
 
 SRC_URI = "git://github.com/OpenPLi/gst-plugin-dvbmediasink.git;protocol=https;branch=gst-1.0"
 
-S = "${WORKDIR}/git"
-
 inherit gitpkgv
 
 PV = "${GSTVERSION}+git"

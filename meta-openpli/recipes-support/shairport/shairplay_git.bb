@@ -11,8 +11,6 @@ SRC_URI = "git://github.com/juhovh/shairplay.git;branch=master;protocol=https \
            file://remove-dns-sd-h-header-file-check.patch \
 "
 
-S = "${WORKDIR}/git"
-
 do_install:append(){
     install -d ${D}/${includedir}/shairplay
     install -m 0644 ${S}/include/shairplay/*.h ${D}/${includedir}/shairplay/

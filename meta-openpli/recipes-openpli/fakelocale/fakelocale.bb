@@ -12,8 +12,6 @@ SRC_URI = "git://github.com/OpenPLi/fakelocale-locales.git;protocol=https;branch
 	file://SYS_LC_MESSAGES \
 "
 
-S = "${WORKDIR}/git"
-
 LOCALEDIR = "${libdir}/locale"
 LOCALEDIR2 = "${datadir}/locale"
 

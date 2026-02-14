@@ -106,8 +106,6 @@ SRC_URI = "git://github.com/xbmc/xbmc.git;protocol=https;branch=Omega \
            file://0101-gst-player.patch \
           "
 
-S = "${WORKDIR}/git"
-
 ACCEL ?= ""
 ACCEL:x86 = "vaapi vdpau"
 ACCEL:x86-64 = "vaapi vdpau"

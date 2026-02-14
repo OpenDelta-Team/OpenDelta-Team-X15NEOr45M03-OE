@@ -12,6 +12,4 @@ PKGV = "1.0+git${GITPKGV}"
 SRC_URI = "git://gitlab.gnome.org/GNOME/phodav.git;protocol=https;branch=master"
 SRCREV = "2099147691fa98f37afa9196d5b7b9bd94c81c4c"
 
-S = "${WORKDIR}/git"
-
 DEPENDS = "avahi libsoup-2.4"

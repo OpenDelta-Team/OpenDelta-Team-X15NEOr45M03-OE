@@ -12,6 +12,4 @@ PKGV = "${GITPKGVTAG}"
 
 SRC_URI = "git://code.videolan.org/videolan/dav1d.git;protocol=https;branch=master"
 
-S = "${WORKDIR}/git"
-
 inherit meson

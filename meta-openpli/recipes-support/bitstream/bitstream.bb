@@ -14,7 +14,6 @@ PKGV = "${GITPKGVTAG}"
 # make the origin overridable from OE config, for local mirroring
 SRC_ORIGIN ?= "git://github.com/videolan/bitstream.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
-S = "${WORKDIR}/git"
 
 inherit autotools-brokensep pkgconfig
 

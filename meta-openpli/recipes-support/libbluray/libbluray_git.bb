@@ -15,8 +15,6 @@ inherit gittag meson pkgconfig
 PV = "git"
 PKGV = "${GITPKGVTAG}"
 
-S = "${WORKDIR}/git"
-
 EXTRA_OECONF = " \
     --disable-bdjava-jar \
     --disable-doxygen-doc \

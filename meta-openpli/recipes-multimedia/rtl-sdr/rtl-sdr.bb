@@ -13,8 +13,6 @@ SRC_URI[sha256sum] = "84db1d332e27f0c6c28e261f4993f4b7c2953761991c328fd0f195260d
 
 SRC_URI = "git://git.osmocom.org/rtl-sdr;protocol=https;branch=master"
 
-S = "${WORKDIR}/git"
-
 DEPENDS = "libusb1"
 
 EXTRA_OECMAKE += " -DLIB_INSTALL_DIR=${libdir}"

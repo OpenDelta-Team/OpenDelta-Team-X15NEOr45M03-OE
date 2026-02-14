@@ -15,8 +15,6 @@ EXTRA_OECONF = " \
 
 ALLOW_EMPTY:${PN} = "1"
 
-S = "${WORKDIR}/git"
-
 DEPLOY_DIR = "${TMPDIR}/deploy"
 
 OPERA_BROWSER = "opera-browser-util_1.0-r42_20151222_1_mips32el.ipk"

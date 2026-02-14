@@ -15,7 +15,6 @@ SRC_URI:append:libc-musl = " file://0001-streamproxy-fix-build-with-musl.patch"
 
 FILES:${PN} = "${bindir}/streamproxy ${sysconfdir}/init.d/streamproxy.sh ${sysconfdir}/enigma2/streamproxy.conf"
 CONFFILES:${PN} = "${sysconfdir}/enigma2/streamproxy.conf"
-S = "${WORKDIR}/git"
 
 inherit autotools
 

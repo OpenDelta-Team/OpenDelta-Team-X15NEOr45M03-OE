@@ -11,8 +11,6 @@ SRC_URI = "git://github.com/edision-open/RTL8723DS_WiFi_linux.git;protocol=https
 
 SRCREV = "94eef3f7cb762b7309824be6cd2b6af75ac80bbd"
 
-S = "${WORKDIR}/git"
-
 EXTRA_OEMAKE = 'KSRC="${STAGING_KERNEL_BUILDDIR}" USER_EXTRA_CFLAGS="-Wno-date-time" \
     CONFIG_POWER_SAVING=n \
     CONFIG_TRAFFIC_PROTECT=n \

@@ -13,8 +13,6 @@ SRC_URI = "git://github.com/OpenVisionE2/e2isubparser.git;protocol=https;branch=
            file://port-to-python3.patch \
 "
 
-S = "${WORKDIR}/git"
-
 SOURCE_FILES = "src/subparsermodule.c"
 SOURCE_FILES =+ "src/vlc/src/subtitle.c"
 SOURCE_FILES =+ "src/ffmpeg/src/htmlsubtitles.c"

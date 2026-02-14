@@ -14,8 +14,6 @@ PR = "r0"
 SRC_URI = "git://gitlab.com/e2i/f4mdump.git;protocol=http;branch=master \
 	file://fix-build-openssl111x.patch"
 
-S = "${WORKDIR}/git"
-
 SRCRTMP = "ext/librtmp/amf.c"
 SRCRTMP =+ "ext/librtmp/hashswf.c"
 SRCRTMP =+ "ext/librtmp/log.c"

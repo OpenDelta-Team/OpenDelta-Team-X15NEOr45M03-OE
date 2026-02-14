@@ -28,8 +28,6 @@ SRC_URI = "git://github.com/axiomatic-systems/Bento4;protocol=https;branch=maste
         file://0016-Add-support-for-cmake-install.patch"
 SRC_URI:append:mipsel = " file://ap4config-set-mipsel-byte-order.patch"
 
-S = "${WORKDIR}/git"
-
 EXTRA_OECMAKE:append = " -DBUILD_APPS=OFF"
 CXXFLAGS:append = " -fPIC"
 

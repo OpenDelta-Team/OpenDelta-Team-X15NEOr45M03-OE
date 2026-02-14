@@ -18,8 +18,6 @@ SRC_URI = "gitsm://github.com/transmission/transmission;protocol=https;branch=ma
 INITSCRIPT_NAME = "transmission-daemon"
 INITSCRIPT_PARAMS = "defaults 60 "
 
-S = "${WORKDIR}/git"
-
 inherit cmake gettext pkgconfig update-rc.d systemd
 
 PACKAGECONFIG = "${@bb.utils.contains('DISTRO_FEATURES','systemd','systemd','',d)}"

@@ -15,8 +15,6 @@ SRC_URI = " \
 	file://0001-Revert-build-disabling-ffast-math-on-pi4-due-to-impr.patch \
 	"
 
-S = "${WORKDIR}/git"
-
 inherit autotools-brokensep
 
 do_install() {

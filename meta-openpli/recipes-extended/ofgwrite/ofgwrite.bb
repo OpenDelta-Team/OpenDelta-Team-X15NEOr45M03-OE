@@ -17,8 +17,6 @@ SRC_URI = " \
     file://0001-makefile-openssl.patch \
     "
 
-S = "${WORKDIR}/git"
-
 do_install() {
     install -d ${D}${bindir}
     install -m 755 ${S}/ofgwrite ${D}${bindir}

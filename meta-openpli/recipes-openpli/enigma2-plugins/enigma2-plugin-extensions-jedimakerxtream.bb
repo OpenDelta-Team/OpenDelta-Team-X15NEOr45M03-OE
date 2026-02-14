@@ -12,8 +12,6 @@ PKGV = "${GITPKGVTAG}"
 
 SRC_URI = "git://github.com/WanWizard/Jedi_Maker_Xtream.git;protocol=https;branch=master"
 
-S = "${WORKDIR}/git"
-
 FILES:${PN} = " ${sysconfdir}/enigma2/jediplaylists/* \
                 ${libdir}/enigma2/python/Plugins/Extensions/JediMakerXtream/*"
 

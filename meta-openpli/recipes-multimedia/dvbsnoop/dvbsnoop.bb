@@ -13,6 +13,4 @@ PKGV = "1.4.55+git${GITPKGV}"
 SRC_ORIGIN ?= "git://github.com/OpenVisionE2/dvbsnoop.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
 
-S = "${WORKDIR}/git"
-
 inherit autotools

@@ -14,9 +14,6 @@ PKGV = "68+gitr${GITPKGV}"
 
 SRC_URI = "git://github.com/oe-mirrors/exteplayer3.git;branch=master;protocol=https"
 
-S = "${WORKDIR}/git"
-
-
 SOURCE_FILES = "main/exteplayer.c"
 SOURCE_FILES =+ "container/container.c"
 SOURCE_FILES =+ "container/container_ffmpeg.c"

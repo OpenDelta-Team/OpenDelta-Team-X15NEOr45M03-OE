@@ -65,8 +65,6 @@ CONFFILES:enigma2-plugin-extensions-netcaster += "${sysconfdir}/NETcaster.conf"
 FILES:${PN}-meta = "${datadir}/meta"
 PACKAGES += "${PN}-meta ${PN}-build-dependencies"
 
-S = "${WORKDIR}/git"
-
 DEPENDS = " \
 	bluez5 \
 	btinit \

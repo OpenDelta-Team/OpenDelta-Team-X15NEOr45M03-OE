@@ -7,8 +7,6 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=7fbc338309ac38fefcd64b04bb903e34"
 
 SRC_URI = "git://github.com/OpenPLi/gst-plugin-subsink.git;protocol=https;branch=master"
 
-S = "${WORKDIR}/git"
-
 inherit autotools pkgconfig gitpkgv
 
 GSTVERSION = "1.0"

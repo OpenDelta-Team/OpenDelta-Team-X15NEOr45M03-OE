@@ -23,8 +23,6 @@ SRC_URI = "git://github.com/oe-alliance/enigma2-plugin-extensions-hbbtv-webkit.g
            file://port-to-boxinfo.patch \
 "
 
-S = "${WORKDIR}/git"
-
 do_package_qa() {
 }
 

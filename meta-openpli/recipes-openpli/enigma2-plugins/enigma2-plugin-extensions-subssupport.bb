@@ -15,8 +15,6 @@ SRC_URI = "git://github.com/oe-mirrors/subssupport;protocol=https;branch=master 
            file://0002-python3-hardlink.patch \
 "
 
-S = "${WORKDIR}/git"
-
 PV = "git"
 PKGV = "${GITPKGVTAG}"
 

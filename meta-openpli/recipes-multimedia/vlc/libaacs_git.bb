@@ -12,6 +12,4 @@ PKGV = "${GITPKGVTAG}"
 SRC_ORIGIN ?= "git://code.videolan.org/videolan/${BPN}.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
 
-S = "${WORKDIR}/git"
-
 inherit gittag autotools lib_package pkgconfig

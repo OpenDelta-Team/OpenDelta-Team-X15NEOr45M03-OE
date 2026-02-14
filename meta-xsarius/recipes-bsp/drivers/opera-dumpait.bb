@@ -17,8 +17,6 @@ EXTRA_OECONF = " \
 
 ALLOW_EMPTY:${PN} = "1"
 
-S = "${WORKDIR}/git"
-
 DEPLOY_DIR = "${TMPDIR}/deploy"
 
 OPERA_DUMPAIT = "opera-dumpait_git11+c0616d5-r10_mips32el.ipk"

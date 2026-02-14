@@ -15,8 +15,6 @@ PKGV = "20241022+${GITPKGVTAG}"
 
 SRC_URI = "git://github.com/yt-dlp/yt-dlp.git;protocol=https;branch=master"
 
-S = "${WORKDIR}/git"
-
 EXTRA_OEMAKE = "PYTHON=${PYTHON}"
 
 do_compile:prepend() {

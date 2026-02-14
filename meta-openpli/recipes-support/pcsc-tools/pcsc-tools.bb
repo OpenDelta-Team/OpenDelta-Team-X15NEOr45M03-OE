@@ -12,8 +12,6 @@ SRCREV = "${AUTOREV}"
 PV = "git"
 PKGV = "${GITPKGVTAG}"
 
-S = "${WORKDIR}/git"
-
 SRC_URI = "git://github.com/LudovicRousseau/pcsc-tools.git;protocol=https;branch=master"
 
 inherit autotools gettext pkgconfig

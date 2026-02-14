@@ -23,8 +23,6 @@ SRC_URI:append = " \
 	file://03-support-fstab-mounting.patch \
 	"
 
-S = "${WORKDIR}/git"
-
 do_configure:prepend() {
 	mkdir ${S}/libupnp/config.aux
 	cp ${STAGING_DATADIR_NATIVE}/gettext/config.rpath ${S}/libupnp/config.aux/config.rpath

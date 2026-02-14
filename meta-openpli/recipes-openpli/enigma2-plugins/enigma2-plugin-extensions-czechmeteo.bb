@@ -13,6 +13,4 @@ PKGV = "2.0+git${GITPKGV}"
 
 SRC_URI = "git://github.com/ims21/CzechMeteo.git;protocol=https;branch=master"
 
-S = "${WORKDIR}/git"
-
 inherit setuptools3-openplugins python3-compileall

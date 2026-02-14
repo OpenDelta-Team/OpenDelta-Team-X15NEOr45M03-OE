@@ -16,7 +16,6 @@ DEPENDS = "libdvbsi++"
 
 SRC_URI = "git://github.com/pli3/xsarius-opera-dumpait.git;protocol=http;branch=master;protocol=https"
 
-S = "${WORKDIR}/git"
 DESTDIR = "enigma2/python/Plugins/Extensions/HbbTV"
 
 do_install() {

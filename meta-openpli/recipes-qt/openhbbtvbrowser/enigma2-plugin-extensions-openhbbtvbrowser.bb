@@ -20,8 +20,6 @@ SRC_URI = "git://github.com/openhbbtvbrowser/enigma2-plugin-extensions-openhbbtv
     ${@bb.utils.contains('MACHINE_FEATURES', 'vu-eglfs', 'file://0001-add-vuplus-support.patch' , '', d)} \
 "
 
-S = "${WORKDIR}/git"
-
 do_install(){
     install -d ${D}${libdir}/enigma2/python/Plugins/Extensions/HbbTV
     install -m 0755 ${S}/*.py ${D}${libdir}/enigma2/python/Plugins/Extensions/HbbTV

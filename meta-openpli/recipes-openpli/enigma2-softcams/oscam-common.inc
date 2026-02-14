@@ -16,7 +16,6 @@ RDEPENDS:${PN} += "enigma2-plugin-extensions-oscamstatus libdvbcsa libusb1 pcsc-
 
 LDFLAGS:prepend = "-ludev -ldvbcsa "
 
-S = "${WORKDIR}/git"
 B = "${S}"
 
 CAMSTART = "/usr/bin/${CAMNAME} --wait 60 --config-dir /etc/tuxbox/config/${CAMNAME} --daemon --pidfile /tmp/${CAMNAME}.pid --restart 2"

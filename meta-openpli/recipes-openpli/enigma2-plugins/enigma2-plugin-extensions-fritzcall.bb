@@ -17,5 +17,3 @@ PV = "git"
 PKGV = "git${GITPKGV}"
 
 PACKAGE_ARCH = "all"
-
-S = "${WORKDIR}/git"

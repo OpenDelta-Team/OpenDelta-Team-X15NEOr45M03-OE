@@ -12,5 +12,3 @@ PV = "1.1+git"
 PKGV = "1.1+git${GITPKGV}"
 
 SRC_URI = "git://github.com/OpenViX/PlutoTV.git;protocol=https;branch=master"
-
-S = "${WORKDIR}/git"

@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM = "file://LICENSE.GPLv3;md5=5ed852a46d22220a8b07a68e564d84c7"
 DEPENDS = "libdvbsi++"
 
 SRC_URI = "git://code.vuplus.com/git/dumpait.git;branch=master"
-S = "${WORKDIR}/git"
+
 DESTDIR = "enigma2/python/Plugins/Extensions/HbbTV"
 
 inherit gitpkgv

@@ -12,5 +12,3 @@ inherit gittag autotools pkgconfig
 
 PV = "git"
 PKGV = "${GITPKGVTAG}"
-
-S = "${WORKDIR}/git"

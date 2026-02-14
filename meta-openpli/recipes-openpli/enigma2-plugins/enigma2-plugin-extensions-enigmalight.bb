@@ -14,8 +14,6 @@ PR = "r12"
 
 SRC_URI = "git://github.com/oe-mirrors/enigmalight.git;protocol=https;branch=python3"
 
-S = "${WORKDIR}/git"
-
 inherit autotools-brokensep pkgconfig python3-compileall
 
 do_install:append() {

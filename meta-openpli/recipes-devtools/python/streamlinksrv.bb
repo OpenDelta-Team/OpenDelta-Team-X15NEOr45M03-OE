@@ -11,8 +11,6 @@ RDEPENDS:${PN} = "python3-core streamlink"
 SRC_URI = "git://github.com/openpli/livestreamersrv;protocol=https;branch=master \
 "
 
-S = "${WORKDIR}/git"
-
 PV = "1.8.5+git"
 PKGV = "1.8.5+${GITPKGV}"
 

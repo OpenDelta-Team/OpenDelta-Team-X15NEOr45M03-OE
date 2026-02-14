@@ -2,8 +2,6 @@ PLUGIN_BRANCH ?= "python3"
 
 SRC_URI = "git://github.com/E2OpenPlugins/e2openplugin-${MODULE}.git;protocol=https;branch=${PLUGIN_BRANCH}"
 
-S = "${WORKDIR}/git"
-
 inherit pkgconfig python3-compileall
 
 FILES:${PN}-dbg += "\

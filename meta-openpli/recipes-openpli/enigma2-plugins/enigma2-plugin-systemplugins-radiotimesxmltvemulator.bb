@@ -15,8 +15,6 @@ INSANE_SKIP:${PN} += "already-stripped ldflags"
 
 SRC_URI = "git://github.com/LraiZer/RadiotimesXmltvEmulator.git;branch=gui-plugin;protocol=https"
 
-S = "${WORKDIR}/git"
-
 do_compile() {
     echo ${PV} > ${S}/VERSION
     oe_runmake SWIG="swig"

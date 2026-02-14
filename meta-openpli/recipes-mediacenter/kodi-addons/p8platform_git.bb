@@ -11,8 +11,6 @@ PV = "2.2.0"
 SRC_URI = "git://github.com/Pulse-Eight/platform.git;branch=master;protocol=https"
 SRCREV = "a7cd0d5780ed80a4e70480d1650749f29e8a1fb2"
 
-S = "${WORKDIR}/git"
-
 inherit cmake pkgconfig
 
 EXTRA_OECMAKE += "-DCMAKE_INSTALL_LIBDIR=${libdir} -DCMAKE_INSTALL_LIBDIR_NOARCH=${libdir}"

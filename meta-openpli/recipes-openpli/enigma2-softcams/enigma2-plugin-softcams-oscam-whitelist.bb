@@ -8,8 +8,6 @@ PKGV = "2.0+git${GITPKGV}"
 SRC_ORIGIN ?= "git://github.com/E2OpenPlugins/oscam-whitelist.git;protocol=https;branch=main"
 SRC_URI := "${SRC_ORIGIN} "
 
-S = "${WORKDIR}/git"
-
 DEPENDS = "enigma2-plugin-softcams-oscam"
 
 inherit allarch gitpkgv

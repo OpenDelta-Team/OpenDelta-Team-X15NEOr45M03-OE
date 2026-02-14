@@ -18,8 +18,6 @@ SRC_URI = "git://github.com/openpli/pythonwifi.git;branch=master;protocol=https 
 	"
 SRCREV ?= "${AUTOREV}"
 
-S = "${WORKDIR}/git"
-
 do_install:append() {
     install -d ${D}${docdir}/${PN}
     mv ${D}${prefix}/README ${D}${docdir}/${PN}

@@ -15,5 +15,3 @@ SRC_URI := " \
     ${SRC_ORIGIN} \
     file://fix-libdts-link-path.patch \
     "
-
-S = "${WORKDIR}/git"

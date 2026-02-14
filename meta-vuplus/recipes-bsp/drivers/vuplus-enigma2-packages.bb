@@ -21,8 +21,6 @@ SRC_URI = "git://code.vuplus.com/git/dvbapp.git;protocol=http;branch=${BRANCH};t
 	file://0003-fix-import.patch \
 	"
 
-S = "${WORKDIR}/git"
-
 do_install() {
 	install -d  ${D}/usr/lib/enigma2/python/Plugins/SystemPlugins/ManualFancontrol
 	install -d  ${D}/usr/lib/enigma2/python/Plugins/SystemPlugins/FPGAUpgrade

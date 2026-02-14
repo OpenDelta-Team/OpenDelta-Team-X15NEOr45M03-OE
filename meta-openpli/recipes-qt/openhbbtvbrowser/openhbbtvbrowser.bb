@@ -17,7 +17,6 @@ SRC_URI = "git://github.com/openhbbtvbrowser/openhbbtvbrowser.git;protocol=https
     ${@bb.utils.contains_any("MACHINE_FEATURES", "qtevent1", "file://0001-use-event1.patch", "", d)} \
 "
 
-S = "${WORKDIR}/git"
 B = "${WORKDIR}/build"
 
 inherit qmake5

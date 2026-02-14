@@ -16,6 +16,4 @@ SRC_URI = "git://github.com/abdelgmartinezl/PythonDaap;protocol=https;branch=mas
            file://use-setuptools-instead-of-distutils.patch \
 "
 
-S = "${WORKDIR}/git"
-
 include python3-package-split.inc

@@ -10,6 +10,4 @@ PKGV = "0.3.9+git${GITPKGV}"
 SRC_ORIGIN ?= "git://github.com/jack2015/libdvbsi.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
 
-S = "${WORKDIR}/git"
-
 inherit autotools pkgconfig gitpkgv
