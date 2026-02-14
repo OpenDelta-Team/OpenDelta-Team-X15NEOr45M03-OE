@@ -66,7 +66,7 @@ do_configure:prepend () {
 
 do_install() {
 	install -d ${D}${sysconfdir}/tuxbox/config/${CAMNAME}
-	install -m 0644 ${WORKDIR}/oscam.* ${D}${sysconfdir}/tuxbox/config/${CAMNAME}/
+	install -m 0644 ${UNPACKDIR}/oscam.* ${D}${sysconfdir}/tuxbox/config/${CAMNAME}/
 	install -d ${D}${bindir}
 	install -m 0755 ${B}/oscam-upx ${D}${bindir}/${CAMNAME}
 }

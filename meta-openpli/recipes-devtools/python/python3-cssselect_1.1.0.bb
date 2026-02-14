@@ -9,7 +9,7 @@ SRC_URI = "https://files.pythonhosted.org/packages/70/54/37630f6eb2c214cdee2ae56
 SRC_URI[md5sum] = "fa57704c1cb66cc8e537b782bd6b227e"
 SRC_URI[sha256sum] = "f95f8dedd925fd8f54edb3d2dfb44c190d9d18512377d3c1e2388d16126879bc"
 
-S = "${WORKDIR}/cssselect-${PV}"
+S = "${UNPACKDIR}/cssselect-${PV}"
 
 inherit setuptools3
 

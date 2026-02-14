@@ -4,5 +4,5 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 SRC_URI:append = " file://init file://main.conf"
 
 do_install:append() {
-	install -m 0644 ${WORKDIR}/main.conf ${D}/${sysconfdir}/bluetooth/
+	install -m 0644 ${UNPACKDIR}/main.conf ${D}/${sysconfdir}/bluetooth/
 }

@@ -9,7 +9,7 @@ inherit deploy
 SRCDATE = "20230217"
 PR = "${SRCDATE}"
 
-S = "${WORKDIR}/partitions"
+S = "${UNPACKDIR}/partitions"
 
 SRC_URI = "http://downloads.openpli.org/archive/uclan/${MACHINE}-partitions-${SRCDATE}.zip \
            file://logo.img \
@@ -28,7 +28,7 @@ do_deploy() {
     install -m 0755 ${S}/pq_param.bin ${DEPLOY_DIR_IMAGE}/${MACHINE}-partitions
     install -m 0755 ${S}/emmc_partitions.xml ${DEPLOY_DIR_IMAGE}/${MACHINE}-partitions
     install -m 0755 ${S}/baseparam.img ${DEPLOY_DIR_IMAGE}/${MACHINE}-partitions
-    install -m 0755 ${WORKDIR}/logo.img ${DEPLOY_DIR_IMAGE}/${MACHINE}-partitions
+    install -m 0755 ${UNPACKDIR}/logo.img ${DEPLOY_DIR_IMAGE}/${MACHINE}-partitions
     install -m 0755 ${S}/deviceinfo.bin ${DEPLOY_DIR_IMAGE}/${MACHINE}-partitions
     install -m 0755 ${S}/6605s.upg ${DEPLOY_DIR_IMAGE}/${MACHINE}-partitions
 }

@@ -8,7 +8,7 @@ inherit autotools gitpkgv pkgconfig python3-compileall
 
 SRC_URI = "git://github.com/OpenPLi/tuxtxt.git;protocol=https;branch=master"
 
-S = "${WORKDIR}/git/tuxtxt"
+S = "${UNPACKDIR}/${BP}/tuxtxt"
 
 PV = "2.0+git"
 PKGV = "2.0+git${GITPKGV}"
@@ -25,3 +25,5 @@ EXTRA_OECONF = "--with-boxtype=generic --with-configdir=/etc \
 	"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
+
+ERROR_QA:remove = "buildpaths"

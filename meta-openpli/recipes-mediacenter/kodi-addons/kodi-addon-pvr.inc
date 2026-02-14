@@ -25,7 +25,7 @@ SRC_URI = "git://github.com/${PVRGIT}/pvr.${KODIADDONPLUGIN}.git;destsuffix=pvr.
 
 inherit cmake pkgconfig gettext gitpkgv
 
-S = "${WORKDIR}/pvr.${KODIADDONPLUGIN}"
+S = "${UNPACKDIR}/pvr.${KODIADDONPLUGIN}"
 
 OECMAKE_GENERATOR = "Unix Makefiles"
 

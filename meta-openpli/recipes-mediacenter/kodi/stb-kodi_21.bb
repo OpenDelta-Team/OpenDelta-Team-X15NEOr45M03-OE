@@ -208,9 +208,9 @@ EXTRA_OECMAKE = " \
     ${@bb.utils.contains('MACHINE_FEATURES', 'vuplus-cortexa15', '-DWITH_PLATFORM="vuplus-cortexa15"', '', d)} \
     ${@bb.utils.contains('MACHINE_FEATURES', 'mali', '-DWITH_PLATFORM="mali-cortexa15"', '', d)} \
     \
-    -Dgroovy_SOURCE_DIR=${WORKDIR}/groovy-${PV_groovy} \
-    -Dapache-commons-lang_SOURCE_DIR=${WORKDIR}/commons-lang3-${PV_commons-lang3} \
-    -Dapache-commons-text_SOURCE_DIR=${WORKDIR}/commons-text-${PV_commons-text} \
+    -Dgroovy_SOURCE_DIR=${UNPACKDIR}/groovy-${PV_groovy} \
+    -Dapache-commons-lang_SOURCE_DIR=${UNPACKDIR}/commons-lang3-${PV_commons-lang3} \
+    -Dapache-commons-text_SOURCE_DIR=${UNPACKDIR}/commons-text-${PV_commons-text} \
 "
 
 # OECMAKE_GENERATOR = "Unix Makefiles"

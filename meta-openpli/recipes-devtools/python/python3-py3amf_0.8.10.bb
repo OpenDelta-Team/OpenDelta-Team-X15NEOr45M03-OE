@@ -12,7 +12,7 @@ SRC_URI = "https://files.pythonhosted.org/packages/f4/f5/d2fb7c5ee1d3e296a328a02
 SRC_URI[md5sum] = "f6b64ab8da58ca1657890f6ae87ca9cc"
 SRC_URI[sha256sum] = "6dac2d34a09daf5351e654e8cdc3026b3560a6db498c17cdcc84322b3149952c"
 
-S = "${WORKDIR}/Py3AMF-0.8.10"
+S = "${UNPACKDIR}/Py3AMF-0.8.10"
 
 inherit setuptools3
 

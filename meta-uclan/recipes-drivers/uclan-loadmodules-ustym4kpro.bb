@@ -21,5 +21,5 @@ do_compile() {
 
 do_install() {
     install -d ${D}/etc/init.d/
-    install -m 0755 ${WORKDIR}/uclan-loadmodules-ustym4kpro.sh ${D}/etc/init.d/uclan-loadmodules
+    install -m 0755 ${UNPACKDIR}/uclan-loadmodules-ustym4kpro.sh ${D}/etc/init.d/uclan-loadmodules
 }

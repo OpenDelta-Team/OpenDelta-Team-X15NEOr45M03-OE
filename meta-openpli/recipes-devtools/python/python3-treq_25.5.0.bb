@@ -7,7 +7,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=a5dd67fd17479587f7093769d95ef186"
 SECTION = "devel/python"
 
-S = "${WORKDIR}/${PN}-${PV}"
+S = "${UNPACKDIR}/${PN}-${PV}"
 
 DEPENDS += "python3-incremental-native"
 

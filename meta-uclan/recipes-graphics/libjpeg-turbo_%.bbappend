@@ -8,6 +8,6 @@ SRC_URI:append:ustym4ks2ottx = " \
 
 do_install:append:ustym4ks2ottx() {
 	install -d ${D}${libdir}
-	install -m 0755 ${WORKDIR}/libjpeg.so.8.2.2 ${D}${libdir}/
+	install -m 0755 ${UNPACKDIR}/libjpeg.so.8.2.2 ${D}${libdir}/
 	ln -s libjpeg.so.8.2.2 ${D}${libdir}/libjpeg.so.8
 }

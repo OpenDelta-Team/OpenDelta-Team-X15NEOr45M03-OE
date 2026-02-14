@@ -21,5 +21,5 @@ do_compile() {
 
 do_install() {
     install -d ${D}/etc/init.d/
-    install -m 0755 ${WORKDIR}/uclan-libreader-ustym4ks2ottx.sh ${D}/etc/init.d/uclan-libreader
+    install -m 0755 ${UNPACKDIR}/uclan-libreader-ustym4ks2ottx.sh ${D}/etc/init.d/uclan-libreader
 }

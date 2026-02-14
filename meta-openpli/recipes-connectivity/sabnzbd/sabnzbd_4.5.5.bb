@@ -27,7 +27,7 @@ SRC_URI = "https://github.com/sabnzbd/sabnzbd/releases/download/${PV}/SABnzbd-${
 SRC_URI[md5sum] = "0590d13d182195c9f112ac346d731691"
 SRC_URI[sha256sum] = "7f93d714287293f519f244b92d8eb727aa504448c5961dab8420e2093f92e3b7"
 
-S = "${WORKDIR}/SABnzbd-${PV}"
+S = "${UNPACKDIR}/SABnzbd-${PV}"
 
 INSTALLDIR = "${libdir}/${PN}"
 
@@ -46,10 +46,10 @@ do_install() {
 	cp -r . ${D}${INSTALLDIR}/
 	rm -rf ${D}${INSTALLDIR}/.git
 	install -d ${D}${sysconfdir}/init.d
-	install -m 755 ${WORKDIR}/sabnzbd ${D}${sysconfdir}/init.d/sabnzbd
-	install -m 755 ${WORKDIR}/init-functions ${D}${sysconfdir}/init.d/init-functions
+	install -m 755 ${UNPACKDIR}/sabnzbd ${D}${sysconfdir}/init.d/sabnzbd
+	install -m 755 ${UNPACKDIR}/init-functions ${D}${sysconfdir}/init.d/init-functions
 	install -d ${D}${sysconfdir}/enigma2
-	install -m 644 ${WORKDIR}/sabnzbd.conf ${D}/etc/enigma2/sabnzbd.conf
+	install -m 644 ${UNPACKDIR}/sabnzbd.conf ${D}/etc/enigma2/sabnzbd.conf
 }
 
 do_install:append() {

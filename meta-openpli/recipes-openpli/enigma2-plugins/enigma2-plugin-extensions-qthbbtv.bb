@@ -14,7 +14,7 @@ SRC_URI = "git://github.com/zgemma-star/e2plugins.git;protocol=https;branch=pyth
 PACKAGES = "${PN}"
 RDEPENDS:${PN}  = "qtwebkit"
 
-S = "${WORKDIR}/git/qthbbtv${VER}"
+S = "${UNPACKDIR}/qthbbtv${VER}"
 
 QtHbbtv = "enigma2/python/Plugins/Extensions/QtHbbtv"
 

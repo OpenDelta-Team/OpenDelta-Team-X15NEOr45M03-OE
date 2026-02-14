@@ -16,7 +16,7 @@ do_install() {
 	install -d ${D}${bindir}
 	install -m 0755 ${S}/bin/newcs.mips ${D}${bindir}/newcs
 	install -d ${D}${sysconfdir}/tuxbox/config
-	install -m 0644 ${WORKDIR}/newcs.xml ${D}${sysconfdir}/tuxbox/config/newcs.xml.example
+	install -m 0644 ${S = "${UNPACKDIR}/${BP}/xml"}/newcs.xml ${D}${sysconfdir}/tuxbox/config/newcs.xml.example
 }
 
 pkg_postinst:${PN} () {

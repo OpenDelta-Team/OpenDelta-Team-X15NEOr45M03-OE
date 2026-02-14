@@ -39,10 +39,10 @@ do_compile() {
 
 do_install() {
 	install -d ${D}${LOCALEDIR2}
-	install ${WORKDIR}/locale.alias ${D}${LOCALEDIR2}
+	install ${S = "${UNPACKDIR}/${BP}/xml"}/locale.alias ${D}${LOCALEDIR2}
 
 	install -d ${D}${LOCALEDIR}/fake/LC_MESSAGES
-	install ${WORKDIR}/SYS_LC_MESSAGES ${D}${LOCALEDIR}/fake/LC_MESSAGES/
+	install ${S = "${UNPACKDIR}/${BP}/xml"}/SYS_LC_MESSAGES ${D}${LOCALEDIR}/fake/LC_MESSAGES/
 
 	for lang in ${LANGUAGES}; do
 		install -d ${D}${LOCALEDIR}/${lang}

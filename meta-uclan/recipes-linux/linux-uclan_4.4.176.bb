@@ -23,8 +23,8 @@ SRC_URI += "http://downloads.openpli.org/archive/uclan/uclan-linux-${PV}-${SRCDA
 
 COMPATIBLE_MACHINE = "ustym4ks2ottx"
 
-S = "${WORKDIR}/linux-${PV}"
-B = "${WORKDIR}/build"
+S = "${UNPACKDIR}/linux-${PV}"
+B = "${UNPACKDIR}/build"
 
 export OS = "Linux"
 KERNEL_OBJECT_SUFFIX = "ko"
@@ -38,13 +38,13 @@ FILES:${KERNEL_PACKAGE_NAME}-image = "${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE} /$
 
 kernel_do_configure:prepend() {
 	install -d ${B}/usr
-	install -m 0644 ${WORKDIR}/initramfs-subdirboot.cpio.gz ${B}/
+	install -m 0644 ${UNPACKDIR}/initramfs-subdirboot.cpio.gz ${B}/
 }
 
 kernel_do_install:append() {
 	install -d ${D}/${KERNEL_IMAGEDEST}
 	install -m 0755 ${KERNEL_OUTPUT} ${D}/${KERNEL_IMAGEDEST}
-	install -m 0755 ${WORKDIR}/findkerneldevice.sh ${D}${KERNEL_IMAGEDEST}
+	install -m 0755 ${UNPACKDIR}/findkerneldevice.sh ${D}${KERNEL_IMAGEDEST}
 }
 
 pkg_postinst:kernel-image () {

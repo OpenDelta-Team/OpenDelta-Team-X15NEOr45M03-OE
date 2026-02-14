@@ -17,6 +17,6 @@ do_install:append() {
 	rm -fr ${D}/tmp
 
 	install -d ${D}${sysconfdir}/profile.d
-	install -m 0644 ${WORKDIR}/utf8.sh ${D}${sysconfdir}/profile.d/utf8.sh
-	install -m 0644 ${WORKDIR}/filesystems ${D}${sysconfdir}/filesystems
+	install -m 0644 ${UNPACKDIR}/utf8.sh ${D}${sysconfdir}/profile.d/utf8.sh
+	install -m 0644 ${UNPACKDIR}/filesystems ${D}${sysconfdir}/filesystems
 }

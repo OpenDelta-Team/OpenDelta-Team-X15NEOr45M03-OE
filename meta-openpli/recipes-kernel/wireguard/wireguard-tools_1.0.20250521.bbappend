@@ -9,5 +9,5 @@ INITSCRIPT_PARAMS = "defaults"
 
 do_install:append() {
         install -d ${D}${sysconfdir}/init.d
-        install -m 755 ${WORKDIR}/wg ${D}${sysconfdir}/init.d/wg
+        install -m 755 ${UNPACKDIR}/wg ${D}${sysconfdir}/init.d/wg
 }

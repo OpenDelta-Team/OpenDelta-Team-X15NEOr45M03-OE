@@ -26,5 +26,5 @@ do_install() {
 	install -d ${D}${sysconfdir}
 	install -m 0644 ${S}/CCcam.cfg ${D}${sysconfdir}/CCcam.cfg
 	install -d ${D}${sysconfdir}/ppanels
-	install -m 0644 ${WORKDIR}/CCcam.xml ${D}${sysconfdir}/ppanels/CCcam.xml
+	install -m 0644 ${UNPACKDIR}/CCcam.xml ${D}${sysconfdir}/ppanels/CCcam.xml
 }

@@ -15,8 +15,8 @@ S = "${UNPACKDIR}"
 do_install() {
     install -d ${D}${sysconfdir}/udev/rules.d
     install -d ${D}${sysconfdir}/udev/scripts/
-    install -m 0644 ${WORKDIR}/device-mapper.rules ${D}${sysconfdir}/udev/rules.d/device-mapper.rules
-    install -m 0755 ${WORKDIR}/mmc-dev-mapping.sh ${D}${sysconfdir}/udev/scripts/mmc-dev-mapping.sh 
+    install -m 0644 ${UNPACKDIR}/device-mapper.rules ${D}${sysconfdir}/udev/rules.d/device-mapper.rules
+    install -m 0755 ${UNPACKDIR}/mmc-dev-mapping.sh ${D}${sysconfdir}/udev/scripts/mmc-dev-mapping.sh 
 }
 
 FILES:${PN} = "${sysconfdir}/udev"

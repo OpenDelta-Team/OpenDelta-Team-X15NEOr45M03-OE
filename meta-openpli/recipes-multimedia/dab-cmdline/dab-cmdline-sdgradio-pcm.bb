@@ -15,7 +15,7 @@ SRC_URI = "git://github.com/satdreamgr/dab-cmdline.git;protocol=https;branch=sdg
 
 EXTRA_OECMAKE = "-DRTLSDR=ON -DCMAKE_INSTALL_PREFIX=/usr/bin"
 
-S = "${WORKDIR}/git/sdgradio"
+S = "${UNPACKDIR}/git/sdgradio"
 
 inherit cmake pkgconfig
 

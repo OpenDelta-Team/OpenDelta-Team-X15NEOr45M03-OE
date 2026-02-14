@@ -7,7 +7,7 @@ inherit gitpkgv
 
 SRC_URI = "git://github.com/OpenPLi/tuxtxt.git;protocol=https;branch=master"
 
-S = "${WORKDIR}/git/libtuxtxt"
+S = "${UNPACKDIR}/${BP}/libtuxtxt"
 
 PV = "2.0+git"
 PKGV = "2.0+git${GITPKGV}"

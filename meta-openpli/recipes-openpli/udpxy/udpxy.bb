@@ -16,7 +16,7 @@ SRC_URI = "git://github.com/pcherenkov/udpxy.git;branch=master;protocol=https \
 	 file://udpxy.sh"
 CFLAGS:append = " -Wno-format-truncation -Wno-error=stringop-truncation "
 
-S = "${WORKDIR}/git/chipmunk"
+S = "${UNPACKDIR}/git/chipmunk"
 
 FILES:${PN} = "${bindir}/* ${sysconfdir}/init.d/udpxy.sh"
 
@@ -26,7 +26,7 @@ do_compile() {
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d
-    install -m 755 ${WORKDIR}/udpxy.sh ${D}${sysconfdir}/init.d/
+    install -m 755 ${UNPACKDIR}/udpxy.sh ${D}${sysconfdir}/init.d/
     install -d ${D}/${bindir}
     install -m 755 ${S}/udpxy ${D}/${bindir}
 }
