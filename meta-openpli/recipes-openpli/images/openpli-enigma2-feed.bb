@@ -114,6 +114,7 @@ OPTIONAL_PACKAGES += " \
 	ntfs-3g \
 	openssh \
 	openvpn \
+	openresolv \
 	openmultiboot \
 	p7zip \
 	parted \
@@ -155,6 +156,7 @@ OPTIONAL_PACKAGES += " \
 	screen \
 	sed \
 	shairplay \
+	smbnetfs \
 	sshpass \
 	sshfs-fuse \
 	smartmontools \
@@ -192,6 +194,7 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-dlnabrowser \
 	enigma2-plugin-extensions-dlnaserver \
 	enigma2-plugin-extensions-czechmeteo \
+	enigma2-plugin-extensions-e2iplayer \
 	enigma2-plugin-extensions-e2iplayer-deps \
 	enigma2-plugin-extensions-e2embyclient \
 	enigma2-plugin-extensions-enhancedmoviecenter \
@@ -199,6 +202,7 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-epgimport \
 	enigma2-plugin-extensions-estalker \
 	enigma2-plugin-extensions-fontinfo \
+	enigma2-plugin-extensions-foreca \
 	enigma2-plugin-extensions-freechannels \
 	enigma2-plugin-extensions-fritzcall \
 	enigma2-plugin-extensions-hdmitest \
@@ -207,8 +211,10 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-jediepgxtream \
 	enigma2-plugin-extensions-jedimakerxtream \
 	enigma2-plugin-extensions-managerautofs \
+	enigma2-plugin-extensions-mediaplayer2 \
 	enigma2-plugin-extensions-modifyplifullhd \
 	enigma2-plugin-extensions-moviemanager \
+	enigma2-plugin-extensions-oaweather \
 	enigma2-plugin-extensions-openmultiboot \
 	enigma2-plugin-extensions-plutotv \
 	enigma2-plugin-extensions-refreshbouquet \
@@ -221,10 +227,14 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-ts-sateditor \
 	enigma2-plugin-extensions-usbformatwizard \
 	enigma2-plugin-extensions-vavoo \
+	enigma2-plugin-extensions-weathermsn \
+	enigma2-plugin-extensions-weatherplugin \
 	enigma2-plugin-extensions-vcs \
 	enigma2-plugin-extensions-xmodem \
 	enigma2-plugin-extensions-xstreamity \
 	enigma2-plugin-extensions-xklass \
+	enigma2-plugin-extensions-yampmusicplayer \
+	enigma2-plugin-extensions-yahooweather \
 	enigma2-plugin-extensions-youtube \
 	enigma2-plugin-systemplugins-m3uiptv \
 	enigma2-plugin-systemplugins-crossepg \
