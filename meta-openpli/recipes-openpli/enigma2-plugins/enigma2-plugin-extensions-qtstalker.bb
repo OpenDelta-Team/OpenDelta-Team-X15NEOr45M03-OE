@@ -14,7 +14,7 @@ SRC_URI = "git://github.com/zgemma-star/e2plugins.git;protocol=https;branch=pyth
 PACKAGES = "${PN}"
 RDEPENDS:${PN}  = "qtwebkit python3-netifaces" 
 
-S = "${WORKDIR}/git/qtstalker${VER}"
+S = "${UNPACKDIR}/git/qtstalker${VER}"
 
 QtStalker = "enigma2/python/Plugins/Extensions/Stalker"
 

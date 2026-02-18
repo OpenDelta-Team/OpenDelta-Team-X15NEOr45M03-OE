@@ -16,7 +16,7 @@ SRC_URI = "git://github.com/pcherenkov/udpxy.git;branch=master;protocol=https \
 	 file://udpxy.sh"
 CFLAGS:append = " -Wno-format-truncation -Wno-error=stringop-truncation "
 
-S = "${UNPACKDIR}/git/chipmunk"
+S = "${UNPACKDIR}/${PN}-${PV}/chipmunk"
 
 FILES:${PN} = "${bindir}/* ${sysconfdir}/init.d/udpxy.sh"
 

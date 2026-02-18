@@ -13,7 +13,7 @@ SRC_URI = "${SOURCEFORGE_MIRROR}/${BPN}/${SRCNAME}-${PV}.tar.gz \
            file://port-to-python3.patch \
 "
 
-S = "${WORKDIR}/${SRCNAME}-${PV}"
+S = "${UNPACKDIR}/${SRCNAME}-${PV}"
 
 inherit setuptools3
 

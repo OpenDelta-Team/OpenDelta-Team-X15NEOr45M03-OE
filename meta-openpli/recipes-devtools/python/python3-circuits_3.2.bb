@@ -11,7 +11,7 @@ SRC_URI = "https://files.pythonhosted.org/packages/c4/53/0577ec33811bb4657722629
 SRC_URI[md5sum] = "26daaca7f386c781820d2a1174d91325"
 SRC_URI[sha256sum] = "b2fad9be2235f87480c194efc91eaeed3cb030c465d4697f1ca326ce3619bf9b"
 
-S = "${WORKDIR}/circuits-${PV}"
+S = "${UNPACKDIR}/circuits-${PV}"
 
 inherit setuptools3
 

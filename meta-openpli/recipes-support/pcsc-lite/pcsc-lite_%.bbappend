@@ -15,7 +15,7 @@ INITSCRIPT_PARAMS = "defaults"
 
 do_install:append() {
     install -d ${D}/${sysconfdir}/init.d
-    install -m 755 ${WORKDIR}/pcscd ${D}/${sysconfdir}/init.d
+    install -m 755 ${UNPACKDIR}/pcscd ${D}/${sysconfdir}/init.d
 }
 
 FILES:${PN} += "/etc/init.d/pcscd"

@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://LICENSE.rst;md5=b15d29f500f748d1c2a15709769090a8"
 
 RDEPENDS:${PN} = "python3-core"
 
-S = "${WORKDIR}/pysnmp-${PV}"
+S = "${UNPACKDIR}/pysnmp-${PV}"
 
 inherit pypi setuptools3
 

@@ -10,7 +10,7 @@ SRC_URI = "https://files.pythonhosted.org/packages/c6/0d/f6acfd12f098b9f05b9146b
 SRC_URI[md5sum] = "01dec1a7164faf2406a3a03bf56aef80"
 SRC_URI[sha256sum] = "f33e87286e7b3e309e04e7225d8e49382d9d7773e6092241d7f613893c563495"
 
-S = "${WORKDIR}/CherryPy-${PV}"
+S = "${UNPACKDIR}/CherryPy-${PV}"
 
 inherit setuptools3
 

@@ -18,7 +18,7 @@ SRC_URI = "file://mt7610u_wifi_sta_v3002_dpo_20130916.tar.bz2 \
 	file://0007-kernel-4_11.patch;patch=1 \
 	"
 
-S = "${WORKDIR}/mt7610u_wifi_sta_v3002_dpo_20130916"
+S = "${UNPACKDIR}/mt7610u_wifi_sta_v3002_dpo_20130916"
 
 EXTRA_OEMAKE = "LINUX_SRC=${STAGING_KERNEL_DIR}"
 

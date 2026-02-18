@@ -14,7 +14,7 @@ SRC_ORIGIN ?= "git://github.com/OpenPLi/${BPN}.git;protocol=https;branch=master 
 "
 SRC_URI := "${SRC_ORIGIN} "
 
-S = "${UNPACKDIR}/git/src"
+S = "${UNPACKDIR}/${BPN}-${PV}/src"
 
 inherit setuptools3-openplugins
 

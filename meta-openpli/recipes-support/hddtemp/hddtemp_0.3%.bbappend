@@ -6,5 +6,5 @@ SRC_URI += " \
 
 do_install:append() {
     install -d ${D}${sysconfdir}/init.d
-    install -m 0755 ${WORKDIR}/init ${D}${sysconfdir}/init.d/hddtemp
+    install -m 0755 ${UNPACKDIR}/init ${D}${sysconfdir}/init.d/hddtemp
 }

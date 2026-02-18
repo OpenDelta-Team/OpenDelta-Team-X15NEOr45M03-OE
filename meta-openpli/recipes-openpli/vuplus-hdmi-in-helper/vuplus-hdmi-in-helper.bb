@@ -15,8 +15,8 @@ S = "${UNPACKDIR}"
 do_install() {
     install -d ${D}${sysconfdir}/init.d/
     install -d ${D}${bindir}
-    install -m 0755 ${WORKDIR}/update_systemconfig_arm ${D}${bindir}/update_systemconfig
-    install -m 0755 ${WORKDIR}/update_systemconfig.sh ${D}${sysconfdir}/init.d/
+    install -m 0755 ${UNPACKDIR}/update_systemconfig_arm ${D}${bindir}/update_systemconfig
+    install -m 0755 ${UNPACKDIR}/update_systemconfig.sh ${D}${sysconfdir}/init.d/
 }
 
 inherit update-rc.d

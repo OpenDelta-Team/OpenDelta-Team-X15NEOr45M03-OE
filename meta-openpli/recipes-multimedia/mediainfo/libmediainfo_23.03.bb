@@ -13,6 +13,6 @@ SRC_URI = "https://mediaarea.net/download/source/libmediainfo/${PV}/libmediainfo
 SRC_URI[md5sum] = "dd166e6fa2cb2eafd3a783ccd4da3fcd"
 SRC_URI[sha256sum] = "c1255fb8aa6a505fb3c738c731a327d4966f0e3cbb2bb3b4be89b9ee0263cb74"
 
-S = "${WORKDIR}/MediaInfoLib/Project/GNU/Library"
+S = "${UNPACKDIR}/MediaInfoLib/Project/GNU/Library"
 
 inherit autotools-brokensep pkgconfig

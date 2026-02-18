@@ -11,6 +11,6 @@ PKGV = "1.0+git${GITPKGV}"
 
 SRC_URI = "git://gitlab.com/samsamsam/iptvplayer-bin-components.git;protocol=http;branch=master"
 
-S = "${UNPACKDIR}/git/gst-ifdsrc/gst-ifdsrc"
+S = "${UNPACKDIR}/${PN}-${PV}/gst-ifdsrc/gst-ifdsrc"
 
 FILES:${PN} += "${libdir}/gstreamer-1.0"

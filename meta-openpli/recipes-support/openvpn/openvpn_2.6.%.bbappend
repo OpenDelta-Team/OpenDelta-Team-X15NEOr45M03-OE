@@ -9,7 +9,7 @@ INITSCRIPT_NAME:${PN} = "openvpn"
 INITSCRIPT_PARAMS:${PN} = "defaults"
 
 do_install:append () {
-    install -m 775 ${WORKDIR}/update-resolv-conf.sh ${D}${sysconfdir}/openvpn/update-resolv-conf.sh
+    install -m 775 ${UNPACKDIR}/update-resolv-conf.sh ${D}${sysconfdir}/openvpn/update-resolv-conf.sh
 }
 
 pkg_postinst:${PN} () {

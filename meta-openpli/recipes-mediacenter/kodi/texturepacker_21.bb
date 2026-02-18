@@ -8,7 +8,7 @@ SRC_URI = "git://github.com/xbmc/xbmc.git;protocol=https;branch=master"
 
 inherit cmake gettext python3-dir python3native
 
-S = "${WORKDIR}/git/tools/depends/native/TexturePacker/src"
+S = "${UNPACKDIR}/git/tools/depends/native/TexturePacker/src"
 
 DEPENDS = " \
     giflib \
@@ -19,7 +19,7 @@ DEPENDS = " \
 
 OECMAKE_CXX_FLAGS:append = " -DTARGET_POSIX -std=gnu++17 -I${UNPACKDIR}/git/xbmc/linux"
 
-EXTRA_OECMAKE = "-DKODI_SOURCE_DIR=${WORKDIR}/git"
+EXTRA_OECMAKE = "-DKODI_SOURCE_DIR=${UNPACKDIR}/git"
 
 do_install() {
     install -d ${D}${bindir}

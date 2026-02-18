@@ -3,7 +3,7 @@ DESCRIPTION = "evocamd ${PV} softcam"
 
 SRC_URI = "http://downloads.openpli.org/softcams/evocamd-${PV}.zip"
 
-S = "${WORKDIR}/evocamd-${PV}"
+S = "${UNPACKDIR}/evocamd-${PV}"
 
 INHIBIT_PACKAGE_STRIP = "1"
 
