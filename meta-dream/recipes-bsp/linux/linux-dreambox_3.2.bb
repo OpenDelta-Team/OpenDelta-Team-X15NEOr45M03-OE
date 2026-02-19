@@ -56,4 +56,6 @@ SRC_URI[unionfs.sha256sum] = "c0c449a445e9e07c5b1ba8e8c40013c0e40a5948c30a719067
 
 require linux-dreambox.inc
 
+export KCFLAGS += "-std=gnu17 -Wno-error=incompatible-pointer-types -Wno-error=int-conversion"
+
 S = "${UNPACKDIR}/linux-3.2"
