@@ -6,7 +6,7 @@ PR = "r6"
 
 SRC_URI = "file://inittab"
 
-S = "${UNPACKDIR}/sysvinit-${PV}"
+S = "${UNPACKDIR}"
 
 INHIBIT_DEFAULT_DEPS = "1"
 
