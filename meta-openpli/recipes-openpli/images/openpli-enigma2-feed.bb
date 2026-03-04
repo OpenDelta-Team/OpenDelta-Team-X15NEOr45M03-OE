@@ -220,6 +220,7 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-xklass \
 	enigma2-plugin-extensions-youtube \
 	enigma2-plugin-systemplugins-m3uiptv \
+	enigma2-plugin-systemplugins-crossepg \
 	enigma2-plugin-systemplugins-devicemanager \
 	enigma2-plugin-systemplugins-extnumberzap \
 	enigma2-plugin-systemplugins-extrafancontrol \

@@ -22,7 +22,7 @@ inherit python3-dir python3native
 
 ALLOW_EMPTY:${PN} = "1"
 
-CFLAGS:append = " -I${STAGING_INCDIR}/libxml2/ -I${STAGING_INCDIR}/${PYTHON_DIR}/"
+CFLAGS:append = " -std=gnu17 -I${STAGING_INCDIR}/libxml2/ -I${STAGING_INCDIR}/${PYTHON_DIR}/ -Wno-error=implicit-function-declaration"
 
 # prevent lots of QA warnings
 INSANE_SKIP:${PN} += "already-stripped"
