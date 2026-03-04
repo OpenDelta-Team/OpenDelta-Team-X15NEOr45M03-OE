@@ -10,6 +10,7 @@ RRECOMMENDS:${PN} = " \
 	wget \
 	hlsdl \
 	lsdir \
+	f4mdump \
 	gst-ifdsrc \
 	iptvsubparser \
 	rtmpdump \
