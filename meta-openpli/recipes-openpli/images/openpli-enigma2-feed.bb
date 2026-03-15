@@ -167,6 +167,7 @@ OPTIONAL_PACKAGES += " \
 	v4l-utils \
 	vim \
 	wget \
+	yafc \
 	zeroconf \
 	zerotier \
 	zip \
