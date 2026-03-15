@@ -14,6 +14,7 @@ DEPENDS = "libexif libav libjpeg-turbo libvorbis flac libid3tag sqlite3"
 
 SRC_URI = "git://git.code.sf.net/p/minidlna/git;branch=master;module=git \
            file://0001-add-skript-hu.po-adapt-configure.patch \
+           file://fix-build-against-ffmpeg-7.patch \
            "
 
 do_configure:prepend() {
