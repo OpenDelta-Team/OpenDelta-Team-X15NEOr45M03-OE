@@ -6,3 +6,4 @@ SRC_URI += " \
 
 EXTRA_OECONF += " --disable-fcitx --disable-ibus"
 
+CFLAGS += "-Wno-error=incompatible-pointer-types"
