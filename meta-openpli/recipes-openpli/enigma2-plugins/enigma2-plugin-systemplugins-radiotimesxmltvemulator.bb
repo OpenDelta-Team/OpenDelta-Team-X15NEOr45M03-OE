@@ -13,7 +13,7 @@ ALLOW_EMPTY:${PN} = "1"
 
 INSANE_SKIP:${PN} += "already-stripped ldflags"
 
-SRC_URI = "git://github.com/LraiZer/RadiotimesXmltvEmulator.git;branch=gui-plugin;protocol=https"
+SRC_URI = "git://github.com/LraiZer/RadiotimesXmltvEmulator.git;branch=gui-plugin;protocol=https file://drop-redundant-enumeration-declaration.patch"
 
 do_compile() {
     echo ${PV} > ${S}/VERSION
