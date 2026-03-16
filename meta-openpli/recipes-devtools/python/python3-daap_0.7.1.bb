@@ -14,6 +14,9 @@ SRC_URI = "git://github.com/abdelgmartinezl/PythonDaap;protocol=https;branch=mas
            file://python-daap.patch \
            file://The-member-ob_type-is-not-present-in-the-pcapobject.patch \
            file://use-setuptools-instead-of-distutils.patch \
+           file://fix-build-with-gcc15.patch \
 "
+
+CFLAGS += "-Wno-error=int-conversion -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types"
 
 include python3-package-split.inc
