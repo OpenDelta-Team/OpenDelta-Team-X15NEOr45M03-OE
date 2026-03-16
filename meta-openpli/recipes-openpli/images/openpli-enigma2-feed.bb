@@ -84,6 +84,7 @@ OPTIONAL_PACKAGES += " \
 	hddtemp \
 	hdparm \
 	htop \
+	inadyn-mt \
 	inetutils \
 	inotify-tools \
 	iperf3 \
