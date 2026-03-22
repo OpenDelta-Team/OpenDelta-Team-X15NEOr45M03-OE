@@ -7,7 +7,7 @@ index 7a6d747..3682693 100644
  
  	/* check if user has permission to change inode */
 -	err = inode_change_ok(dentry->d_inode, ia);
-+	err = setattr_prepare(dentry->d_inode, ia);
++	err = setattr_prepare(dentry, ia);
  	if (err)
  		goto out_err;
  
@@ -16,7 +16,7 @@ index 7a6d747..3682693 100644
  
  	/* check if user has permission to change lower inode */
 -	err = inode_change_ok(lower_inode, ia);
-+	err = setattr_prepare(lower_inode, ia);
++	err = setattr_prepare(lower_dentry, ia);
  	if (err)
  		goto out;
  

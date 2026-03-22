@@ -1,4 +1,4 @@
-MACHINE_KERNEL_PR:append = ".${INC_PR}.93"
+MACHINE_KERNEL_PR:append = ".${INC_PR}.94"
 
 COMPATIBLE_MACHINE = "dm8000"
 
@@ -57,7 +57,5 @@ SRC_URI[unionfs.md5sum] = "348e5021d5340f12e2968ff4eb74d45d"
 SRC_URI[unionfs.sha256sum] = "c0c449a445e9e07c5b1ba8e8c40013c0e40a5948c30a7190677d19ba7358c11a"
 
 require linux-dreambox.inc
-
-export KCFLAGS += "-Wno-error=incompatible-pointer-types"
 
 S = "${UNPACKDIR}/linux-3.2"
