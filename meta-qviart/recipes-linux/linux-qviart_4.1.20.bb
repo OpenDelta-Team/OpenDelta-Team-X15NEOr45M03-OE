@@ -7,7 +7,7 @@ PR_INC = ".2"
 SRC_URI[md5sum] = "710b7af46d7ac1c78e3ef683c5c0a6ad"
 SRC_URI[sha256sum] = "1bb6b4f0d559885b3bd5f18c66a50a8ff39a284a81ad4da16188d08b9461ec55"
 
-LIC_FILES_CHKSUM = "file://${WORKDIR}/linux/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
+LIC_FILES_CHKSUM = "file://${UNPACKDIR}/linux/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/stblinux-${KV}:"
 
@@ -23,7 +23,7 @@ SRC_URI = "http://downloads.openpli.org/archive/qviart/linux-${KV}-${DATETIME}.t
 
 inherit kernel machine_kernel_pr
 
-S = "${WORKDIR}/linux"
+S = "${UNPACKDIR}/linux"
 
 export OS = "Linux"
 KERNEL_IMAGETYPE = "zImage"
