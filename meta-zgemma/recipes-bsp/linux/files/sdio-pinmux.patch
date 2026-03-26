@@ -50,3 +50,4 @@ index 3bdd0a1..d806cdb 100644
 +	PADCTRL(8, gpio_122_pad_ctrl, 2);
  
  #elif defined(CONFIG_BCM7425)
+ 
