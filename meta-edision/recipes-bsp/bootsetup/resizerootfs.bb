@@ -13,6 +13,8 @@ SRC_URI = "file://resizerootfs"
 
 inherit update-rc.d
 
+S = "${UNPACKDIR}"
+
 INITSCRIPT_NAME = "resizerootfs"
 INITSCRIPT_PARAMS = "start 7 S ."
 
