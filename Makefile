@@ -150,6 +150,8 @@ update:
 	else \
 		$(GIT) submodule sync && \
 		$(GIT) submodule update --init && \
+		cd openembedded-core  && \
+		$(GIT) fetch --tags && \
 		echo "The openpli OE is now up-to-date."; \
 	fi
 
